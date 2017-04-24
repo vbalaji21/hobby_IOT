@@ -1,0 +1,26 @@
+{
+  "name": "hobby_IOT",
+  "version": "1.0.0",
+  "description": "This is a hobby IOT project.",
+  "main": "ha.js",
+  "dependencies": {
+    "cool-ascii-faces": "1.3.4",
+    "ejs": "2.5.6",
+    "express": "4.15.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vbalaji21/hobby_IOT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vbalaji21/hobby_IOT/issues"
+  },
+  "homepage": "https://github.com/vbalaji21/hobby_IOT#readme"
+}
