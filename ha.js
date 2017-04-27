@@ -3,7 +3,8 @@ var flag = 0;
 function httpGet(theUrl)
 {
   var xmlHttp = new XMLHttpRequest();
-  xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+  xmlHttp.open( "GET", theUrl, true ); // false for synchronous request
+  xmlHttp.withCredentials = true;
   xmlHttp.send( null );
   return JSON.parse(xmlHttp.responseText);
 }
