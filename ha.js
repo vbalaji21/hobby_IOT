@@ -12,7 +12,7 @@ function httpGet(theUrl)
 document.write("Sending HTTP Request")
 while(1)
 {
-	var resp = httpGet("http://api.thingspeak.com/channels/239335/fields/1.json?api_key='Q3R57JDMK9XLYR74'")
+	var resp = httpGet("https://api.thingspeak.com/channels/239335/fields/1.json?api_key='Q3R57JDMK9XLYR74'")
 	resp.feeds.forEach(function(value) {
 	//	document.write("Response : " + value.field1)
   if (value.field1 == 21) {
