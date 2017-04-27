@@ -9,7 +9,7 @@ function httpGet(theUrl)
       if (xmlHttp.status === 200) {
         console.log(xmlHttp.response);
         console.log(xmlHttp.responseXML);
-	handler(xmlHttp.responseText);
+	handler(JSON.parse(xmlHttp.responseText));
       }
     }
   }
