@@ -17,10 +17,9 @@ function httpGet(theUrl)
 }
 
 document.write("Sending HTTP Request")
-while(1)
-{
+setInterval(function(){
 	httpGet("https://api.thingspeak.com/channels/239335/fields/1.json?api_key='Q3R57JDMK9XLYR74'")
-}
+}, 1000)
 
 function handler(resp) {
   resp.feeds.forEach(function(value) {
