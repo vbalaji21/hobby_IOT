@@ -4,8 +4,8 @@ function httpGet(theUrl)
 {
   var xmlHttp = new XMLHttpRequest();
   xmlHttp.open( "GET", theUrl, true ); // false for synchronous request
-  xmlHttp.withCredentials = true;
-  xmlHttp.send( null );
+//  xmlHttp.withCredentials = true;
+  xmlHttp.send();
   return JSON.parse(xmlHttp.responseText);
 }
 
